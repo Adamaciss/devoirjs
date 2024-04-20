@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="machine.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+   <div class="machine"><br>
+    <p>
+        <button class="reni" onclick="calcul = ''; console.log(`Réinitialiser:`);">C</button>
+
+    </p>
+    <p>
+        <button onclick="calcul += '1'; console.log(`Résultat : ${calcul}`);">1</button>
+        <button onclick="calcul += '2'; console.log(`Résultat  : ${calcul}`);">2</button>
+        <button onclick="calcul += '3'; console.log(`Résultat  : ${calcul}`);">3</button>
+        <button class="signe" onclick="calcul += '+'; console.log(`Résultat  : ${calcul}`);">+</button>
+    </p>
+    <p>
+        <button onclick="calcul += '4'; console.log(`Résultat  : ${calcul}`);">4</button>
+        <button onclick="calcul += '5'; console.log(`Résultat  : ${calcul}`);">5</button>
+        <button onclick="calcul += '6'; console.log(`Résultat  : ${calcul}`);">6</button>
+        <button class="signe" onclick="calcul += '*'; console.log(`Résultat  : ${calcul}`);">*</button>
+    </p>
+    <p>
+        <button onclick="calcul += '7'; console.log(`Résultat  : ${calcul}`);">7</button>
+        <button onclick="calcul += '8'; console.log(`Résultat  : ${calcul}`);">8</button>
+        <button onclick="calcul += '9'; console.log(`Résultat  : ${calcul}`);">9</button>
+        <button class="signe" onclick="calcul += '/'; console.log(`Résultat  : ${calcul}`);">/</button>
+    </p>
+    <p>
+        <button onclick="calcul += '0'; console.log(`Résultat  : ${calcul}`);">0</button>
+        <button onclick="calcul += '.'; console.log(`Résultat  : ${calcul}`);">,</button>
+        <button onclick="calcul += '-'; console.log(`Résultat  : ${calcul}`);">-</button>
+        <button class="signe" onclick="calcul = eval(calcul); console.log(`Résultat est égal à : ${calcul}`);">=</button>
+    </p>
+    
+   </div>
+   
+    <script>
+        let calcul = '';
+
+    </script>
+</body>
+</html>
